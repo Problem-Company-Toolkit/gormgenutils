@@ -12,6 +12,7 @@ const (
 )
 
 type Model struct {
+	// Must be a POINTER to the model. Model must be exported from the package (this is applicable for all GORM things in genreal).
 	Model           interface{}
 	GenericQueriers func(*gen.Generator)
 }
